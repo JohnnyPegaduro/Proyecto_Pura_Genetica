@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
 
@@ -26,36 +27,64 @@
     </header>
 
     <main id="main-contacto">
-        <div class="formulario-container"><h2 class="formulario-titulo">Newsletter</h2>
-            <h3 class="formulario-subtitulo">Queremos saber mas sobre vos.</h3>
-            <form class="formulario" action="" method="post" enctype="text/plain">
-                <input type="radio" name="sexo">
-                <label for="sexo">hombre</label>
-                <input type="radio" name="sexo">
-                <label for="sexo">mujer</label>
-                <input type="radio" name="sexo">
-                <label for="sexo">sin especificar</label>
-                <br>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="escribi tu nombre" required>
-                <br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" placeholder="escriba su apellido" required>
-                <br>      
-                <label for="tel">Telefono:</label>
-                <input type="number" placeholder="escriba su numero">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" placeholder="escriba su email">
-                <br>
-                <label for="comentarios">Comentarios</label>
-                <br>
-                <textarea name="comentarios" id="" cols="30" rows="5" placeholder="escribi tu comentario" required></textarea>
-                <br>
-                <input type="submit" value="enviar">
-                <input type="reset" value="borrar">
-                <br></div>
-            </main>
+        <div class="container">
+            <h2>Newsletter</h2>
+            <p>Queremos saber mas sobre vos</p>
+            <form action="/action_page.php" class="needs-validation" novalidate>
+
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">Hombre
+                    </label>
+                </div>
+
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optradio">Mujer
+                    </label>
+                </div>
+                
+                <div class="form-check-inline disabled">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input"    name="optradio">Sin especificar
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="uname">Nombre:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Introduce tu Nombre" name="uname" required>
+                    <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Nombre requerido </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="uname">Apellido:</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Introduce tu Apellido" name="uname" required>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Apellido requerido</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="Introduce tu Email" id="email" name="email" required>
+                        <div class="invalid-feedback">Email requerido </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment">Comentarios:</label>
+                        <textarea class="form-control" rows="6" id="comment" placeholder="Escribinos tu comentario!"></textarea>
+                    </div>
+                
+
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember" required> Quiero recibir nuevas ofertas en mi correo
+                        </label>
+                    </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </main>
 
 
 
@@ -139,6 +168,32 @@
             </div>
 
     </footer>
+
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+                }, false);
+            });
+            }, false);
+        })();
+        </script>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 
 
 </body>
