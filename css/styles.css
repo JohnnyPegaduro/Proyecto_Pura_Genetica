@@ -17,35 +17,34 @@
 
 header{
     background-color: #202020;
-    height: 155px;
+    height: 170px;
     width: 100%;
 }
 
-
-.navegador ul{
-    list-style-type: none;
-    text-align: center;
+.navbar{
+    height: 50px;
+    background-color: #2e2e2e !important;
 }
 
-.navegador li{
-    display: inline;
-    text-align: center;
-    margin: 0 10px 0 0;
-
+.navbar li{
+    padding-left: 20px;
 }
 
-.navegador li a{
-    padding: 2px 7px 2px 7px;
+.navbar-nav .nav-link{
+    padding-left: 10px !important;
+}
+
+.nav-item a{
+    padding: 5px ;
     color: rgb(255, 255, 255);
     background-color: #0a0909;
-    border: 5px outset #A4A4A4;
+    border: 4px outset #A4A4A4;
     border-radius: 40px 40px 40px 40px;
-    text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 nav a:hover{
-    color: orangered;
+    color: orangered !important;
     border: 0.1rem solid rgb(156, 156, 156);
     background: linear-gradient(
     90deg,
@@ -69,10 +68,23 @@ nav a:hover{
     
 
     /* -------------------- home seccion -------------------- */
+
+    /* -------------------- carrusel - inicio ----------------------- */
+    
     .img2{
         width: 100%;
         height: 43.75em;
     }
+
+    .carousel-indicators li{
+        height: 15px !important;
+        width: 15px !important;
+        border-radius: 50%;
+    }
+
+    
+    /* -------------------- carrusel - fin ------------------------ */
+
 
     .titular-main{
         color: #fff;
@@ -473,7 +485,7 @@ nav a:hover{
         /*-- header -- */
 
         header{
-            height: 165px;
+            height: 175px;
         }
 
         #logo{
@@ -481,7 +493,7 @@ nav a:hover{
         }
 
         /* -- Home -- */
-        .container{
+        .container-home{
             width: 100%;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
@@ -601,64 +613,54 @@ nav a:hover{
         }
 
         /* Contacto */
-        .formulario-container{
-            width: 100%;
-            height: 90%;
+        #main-contacto{
+            padding-top: 3.25rem;
+        }
+        
+        .container{
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
-
-        .formulario-container{
-            width: 100%;
-        }
-
-        .formulario-titulo{
-            padding: 50px;
-            font-size: 50px;
-            margin-left: 240px;
-
-        }
-
-        .formulario-subtitulo{
-            padding: 50px;
-            padding-top: 10px;
-            font-size: 30px;
-            margin-left: 160px;
-        }
-
-        .formulario{
-            padding-left: 200px;
-            font-size: 40px;
-        }
-
-        textarea{
-            font-size: 25px;
-        }
-
+            border: 1px solid orange;
+            border-radius: 40px 40px 40px 40px;
+            background-color: rgb(54, 54, 54);
+            color: white;
+            font-size: 20px;
+            font-style: oblique;
+            height: 56.25rem;
+            }
     }
 
     /* -------------------- media para celulares -------------------- */
 
-    @media only screen and (max-width: 320px){ 
+    @media only screen and (max-width: 414px){ 
     
         /* -- logo -- */
         #logo{
-            height: 0;
-        }
-        
-        /* -- navegador -- */
-        .navegador li{
-            display: flex;
-            justify-content: center;
-            
+            display: none;
         }
 
-        header{
-            height: 190px;
-        }
-        
         /* -- home -- */
+
+        header{
+            height: 50px;
+        }
+
+        .carousel-indicators{
+            display: none !important;
+        }
+
+        .carousel-inner{
+            display: none !important;
+        }
+
+        .carousel-control-prev{
+            display: none !important;
+        }
+
+        .carousel-control-next{
+            display: none !important;
+        }
 
         main{
             height: 520vh;
@@ -668,9 +670,8 @@ nav a:hover{
             padding: 15px;
         }
 
-        .container{
+        .container-home{
             width: 100%;
-            height: 98%;
             column-gap: 1px;
             row-gap: 100px;
             grid-template-columns: 100px;
@@ -678,8 +679,8 @@ nav a:hover{
 
 
         .item{
-            height: 250px;
-            width: 200px;
+            height: 180px;
+            width: 120px;
         }
 
         .item1{
@@ -759,45 +760,34 @@ nav a:hover{
         /* -- Contacto -- */
 
         #main-contacto{
-            height: 100vh;
+            padding-top: 3.25rem;
+            height: 160vh;
         }
-
-        .formulario-container{
+        
+        .container{
             display: flex;
             flex-direction: column;
-            width: 100%;
-        }
-
-        .formulario-titulo{
-            padding-bottom: 0%;
-            font-size: 40px;
-            margin-left: 10px;
-        }
-
-        .formulario-subtitulo{
-            padding: 50px;
-            padding-top: 10px;
-            font-size: 25px;
-            margin-left: 10px;
-        }
-
-        .formulario{
-            padding: 10px;
+            justify-content: center;
+            border: 1px solid orange;
+            border-radius: 40px 40px 40px 40px;
+            background-color: rgb(54, 54, 54);
+            color: white;
             font-size: 20px;
-            
-        }
-
-        textarea{
-            font-size: 15px;
-        }
+            font-style: oblique;
+            height: 56.25rem;
+            }
 
         /* -- Preguntas frecuentes -- */
 
         #main-preguntas{
-            height: 100vh;
+            height: 195vh;
         }
 
         /* -- Galeria -- */
+
+        #main-galeria{
+            height: 195vh;
+        }
         
         .container-galeria{
             width: 100%;
