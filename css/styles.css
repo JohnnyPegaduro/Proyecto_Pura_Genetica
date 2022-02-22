@@ -24,6 +24,7 @@ header{
 .navbar{
     height: 50px;
     background-color: #2e2e2e !important;
+    z-index: 1;
 }
 
 .navbar li{
@@ -821,4 +822,35 @@ nav a:hover{
         .video4{
             grid-column: 1/4;
         }
+    }
+
+    /* media de celulares en horizontal */
+    @media only screen and (min-width: 414px) {
+
+    main{
+        height: 300vh;
+    }
+
+    #main-galeria{
+        height: 280vh;
+    }
+
+    }
+
+    /* media de iphone 6/7/8 plus (y no plus) en vertical */
+    @media only screen and (max-width:736px) {
+
+    main{
+        height: 510vh;
+    }
+
+    #main-galeria{
+        height: 280vh;
+    }
+
+    .video{
+        height: 250px;
+        width: 280px;
+    }
+
     }
