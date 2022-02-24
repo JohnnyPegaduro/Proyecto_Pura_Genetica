@@ -1,856 +1,899 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* -------------------- logo -------------------- */
-
-#logo{
-    background-image: url(imagenes/logo.png);
-    height: 115px;
-    width: 100%;
-    background-repeat: no-repeat;
+#logo {
+  background-image: url(imagenes/logo.png);
+  height: 115px;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 /* -------------------- Navegador -------------------- */
+header {
+  background-color: #202020;
+  height: 170px;
+  width: 100%;
+}
 
-header{
-    background-color: #202020;
-    height: 170px;
+.navbar {
+  height: 50px;
+  background-color: #2e2e2e !important;
+  z-index: 1;
+}
+
+.navbar li {
+  padding-left: 20px;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 10px !important;
+}
+
+.nav-item a {
+  padding: 5px;
+  color: white;
+  background-color: #0a0909;
+  border: 4px outset #A4A4A4;
+  border-radius: 40px 40px 40px 40px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: orangered !important;
+  border: 0.1rem solid #9c9c9c;
+  background: -webkit-gradient(linear, left top, right top, color-stop(22%, #5e5d5d), to(black));
+  background: linear-gradient(90deg, #5e5d5d 22%, black 100%);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* -------------------- banner - inicio -------------------- */
+main {
+  height: 120vh;
+  width: 100%;
+  background-image: url(imagenes/fondo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* -------------------- banner - fin  -------------------- */
+/* -------------------- home seccion -------------------- */
+/* -------------------- carrusel - inicio ----------------------- */
+.img2 {
+  width: 100%;
+  height: 43.75em;
+}
+
+.carousel-indicators li {
+  height: 15px !important;
+  width: 15px !important;
+  border-radius: 50%;
+}
+
+/* -------------------- carrusel - fin ------------------------ */
+.titular-main {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 2%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid gray;
+  background-color: grey;
+  -webkit-box-shadow: 0 0 10px 0px;
+          box-shadow: 0 0 10px 0px;
+}
+
+.container-home {
+  width: 100%;
+  height: 900px;
+  background-color: rgba(127, 255, 212, 0);
+  display: -ms-grid;
+  display: grid;
+  padding: 50px;
+  -ms-grid-columns: 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px;
+  gap: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-home .item {
+  background-color: rgba(255, 166, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0);
+  height: 200px;
+  width: 155px;
+}
+
+.container-home .item1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(imagenes/proteina4.png);
+  background-size: cover;
+}
+
+.container-home .item1:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item2 {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  background-image: url(imagenes/proteina3.png);
+  background-size: cover;
+}
+
+.container-home .item2:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item3 {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  background-image: url(imagenes/proteina1.png);
+  background-size: cover;
+}
+
+.container-home .item3:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item4 {
+  -ms-grid-column: 4;
+  grid-column: 4/4;
+  background-image: url(imagenes/proteina5.png);
+  background-size: cover;
+}
+
+.container-home .item4:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item5 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(imagenes/proteina6.png);
+  background-size: cover;
+}
+
+.container-home .item5:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item6 {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  background-image: url(imagenes/prework1.png);
+  background-size: cover;
+}
+
+.container-home .item6:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item7 {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  background-image: url(imagenes/proteina7.png);
+  background-size: cover;
+}
+
+.container-home .item7:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item8 {
+  -ms-grid-column: 4;
+  grid-column: 4/4;
+  background-image: url(imagenes/prework2.png);
+  background-size: cover;
+}
+
+.container-home .item8:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item9 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(imagenes/prework3.png);
+  background-size: cover;
+}
+
+.container-home .item9:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item10 {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  background-image: url(imagenes/oxidonitrico1.png);
+  background-size: cover;
+}
+
+.container-home .item10:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item11 {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  background-image: url(imagenes/creatina1.png);
+  background-size: cover;
+}
+
+.container-home .item11:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container-home .item12 {
+  -ms-grid-column: 4;
+  grid-column: 4/4;
+  background-image: url(imagenes/proteina2.png);
+  background-size: cover;
+}
+
+.container-home .item12:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* -------------------- Inicio del footer -------------------- */
+footer {
+  width: 100%;
+  background: #202020;
+  color: white;
+}
+
+.container-footer-all {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.container-footer-all .container-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-footer-all .container-body .colum1 {
+  max-width: 400px;
+}
+
+.container-footer-all .container-body .colum1 h1 {
+  font-size: 22px;
+}
+
+.container-footer-all .container-body .colum1 p {
+  font-size: 14px;
+  color: #C7C7C7;
+  margin-top: 20px;
+}
+
+.container-footer-all .container-body .colum2 {
+  max-width: 400px;
+}
+
+.container-footer-all .container-body .colum2 h1 {
+  font-size: 22px;
+}
+
+.container-footer-all .container-body .row {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-footer-all .container-body .row img {
+  width: 36px;
+  height: 36px;
+}
+
+.container-footer-all .container-body .row label {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #C7C7C7;
+}
+
+.container-footer-all .container-body .colum3 {
+  max-width: 400px;
+}
+
+.container-footer-all .container-body .colum3 h1 {
+  font-size: 22px;
+}
+
+.container-footer-all .container-body .colum3 .row2 {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-footer-all .container-body .colum3 .row2 img {
+  width: 36px;
+  height: 36px;
+}
+
+.container-footer-all .container-body .colum3 .row2 label {
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 140px;
+}
+
+.container-footer {
+  width: 100%;
+  background: #101010;
+}
+
+.container-footer .footer {
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.container-footer .footer .copyright {
+  color: #C7C7C7;
+}
+
+.container-footer .footer .copyright a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.container-footer .footer .information a {
+  text-decoration: none;
+  color: #C7C7C7;
+}
+
+/* -------------------- contacto - inicio ------------------------ */
+#main-contacto {
+  padding-top: 3.25rem;
+}
+
+#main-contacto .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid orange;
+  border-radius: 40px 40px 40px 40px;
+  background-color: #363636;
+  color: white;
+  font-size: 20px;
+  font-style: oblique;
+  height: 56.25rem;
+}
+
+/* -------------------- Preguntas - inicio -------------------- */
+.titularpreguntas {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+}
+
+.preguntas {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* -------------------- Galeria - inicio -------------------- */
+#main-galeria {
+  height: 150vh;
+}
+
+#main-galeria .titular-galeria {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 2%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid gray;
+  background-color: grey;
+  -webkit-box-shadow: 0 0 10px 0px;
+          box-shadow: 0 0 10px 0px;
+}
+
+#main-galeria .container-galeria {
+  width: 100%;
+  height: 90%;
+  background-color: rgba(127, 255, 212, 0);
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  padding: 5%;
+  -ms-grid-columns: 1fr, 1fr;
+      grid-template-columns: 1fr, 1fr;
+  -ms-grid-rows: 1fr, 1fr, 1fr;
+      grid-template-rows: 1fr, 1fr, 1fr;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+  row-gap: 1%;
+}
+
+#main-galeria .container-galeria .video {
+  background-color: rgba(255, 166, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0);
+  height: 200px;
+  width: 100%;
+}
+
+#main-galeria .container-galeria .video .video1 {
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+#main-galeria .container-galeria .video .video2 {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+#main-galeria .container-galeria .video .video3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: -1;
+  grid-column: 2/1;
+}
+
+#main-galeria .container-galeria .video .video4 {
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+}
+
+/* -------------------- Inicio -- media queries -------------------- */
+/* -------------------- media del footer -------------------- */
+@media screen and (max-width: 1100px) {
+  .container-body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .colum1 {
+    max-width: 100%;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+}
+
+/* -------------------- media para tablets ---------------------- */
+@media only screen and (max-width: 812px) {
+  /*-- header -- */
+  header {
+    height: 175px;
+  }
+  #logo {
+    height: 125px;
+  }
+  /* -- Home -- */
+  .container-home {
     width: 100%;
-}
-
-.navbar{
-    height: 50px;
-    background-color: #2e2e2e !important;
-    z-index: 1;
-}
-
-.navbar li{
-    padding-left: 20px;
-}
-
-.navbar-nav .nav-link{
-    padding-left: 10px !important;
-}
-
-.nav-item a{
-    padding: 5px ;
-    color: rgb(255, 255, 255);
-    background-color: #0a0909;
-    border: 4px outset #A4A4A4;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    padding: 10%;
+  }
+  .container-home .item {
+    height: 155px;
+    width: 115px;
+  }
+  .container-home .item1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(imagenes/proteina4.png);
+    background-size: cover;
+  }
+  .container-home .item2 {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    background-image: url(imagenes/proteina3.png);
+    background-size: cover;
+  }
+  .container-home .item3 {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+    background-image: url(imagenes/proteina1.png);
+    background-size: cover;
+  }
+  .container-home .item4 {
+    -ms-grid-column: 4;
+    grid-column: 4/4;
+    background-image: url(imagenes/proteina5.png);
+    background-size: cover;
+  }
+  .container-home .item5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(imagenes/proteina6.png);
+    background-size: cover;
+  }
+  .container-home .item6 {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    background-image: url(imagenes/prework1.png);
+    background-size: cover;
+  }
+  .container-home .item7 {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+    background-image: url(imagenes/proteina7.png);
+    background-size: cover;
+  }
+  .container-home .item8 {
+    -ms-grid-column: 4;
+    grid-column: 4/4;
+    background-image: url(imagenes/prework2.png);
+    background-size: cover;
+  }
+  .container-home .item9 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(imagenes/prework3.png);
+    background-size: cover;
+  }
+  .container-home .item10 {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    background-image: url(imagenes/oxidonitrico1.png);
+    background-size: cover;
+  }
+  .container-home .item11 {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+    background-image: url(imagenes/creatina1.png);
+    background-size: cover;
+  }
+  .container-home .item12 {
+    -ms-grid-column: 4;
+    grid-column: 4/4;
+    background-image: url(imagenes/proteina2.png);
+    background-size: cover;
+  }
+  /* -- Galeria -- */
+  .container-galeria {
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -ms-grid-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr, 1fr, 1fr;
+    -ms-grid-rows: 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr;
+    padding: 2%;
+  }
+  .container-galeria .video {
+    height: 300px;
+    width: 100%;
+  }
+  .container-galeria .video .video1 {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+  .container-galeria .video .video2 {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+  }
+  .container-galeria .video .video3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: -1;
+    grid-column: 2/1;
+  }
+  .container-galeria .video .video4 {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+  }
+  /* Contacto */
+  #main-contacto {
+    padding-top: 3.25rem;
+  }
+  #main-contacto .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid orange;
     border-radius: 40px 40px 40px 40px;
-    font-size: 18px;
+    background-color: #363636;
+    color: white;
+    font-size: 20px;
+    font-style: oblique;
+    height: 56.25rem;
+  }
 }
 
-nav a:hover{
-    color: orangered !important;
-    border: 0.1rem solid rgb(156, 156, 156);
-    background: linear-gradient(
-    90deg,
-    rgb(94, 93, 93) 22%,
-    rgb(0, 0, 0) 100%
-    );
-    transform: scale(1.05);
-    transition: 0.2s;
-}
-
-    /* -------------------- banner - inicio -------------------- */
-    main{
-        height: 120vh;
-        width: 100%;
-        background-image: url(imagenes/fondo.png);
-        background-size: cover;
-        background-position: center;
-        }
-    /* -------------------- banner - fin  -------------------- */
-    
-    
-
-    /* -------------------- home seccion -------------------- */
-
-    /* -------------------- carrusel - inicio ----------------------- */
-    
-    .img2{
-        width: 100%;
-        height: 43.75em;
-    }
-
-    .carousel-indicators li{
-        height: 15px !important;
-        width: 15px !important;
-        border-radius: 50%;
-    }
-
-    
-    /* -------------------- carrusel - fin ------------------------ */
-
-
-    .titular-main{
-        color: #fff;
-        font-size: 25px;
-        text-align: center;
-        padding: 2%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        border: 1px solid gray;
-        background-color: grey;
-        box-shadow: 0 0 10px 0px
-        
-        }
-
-    .container-home{
-        width: 100%;
-        height: 900px;
-        background-color: rgba(127, 255, 212, 0);
-        display: grid;
-        padding: 50px;
-        grid-template-columns: repeat(4, 200px);
-        gap: 60px;
-        justify-content: center;
-    }
-
-    .item{
-        background-color: rgba(255, 166, 0, 0);
-        border: 2px solid rgba(0, 0, 0, 0);
-        height: 200px;
-        width: 155px;
-    }
-
-    .item1{
-        grid-column: 1/2;
-        background-image: url(imagenes/proteina4.png);
-        background-size: cover;
-        
-    }
-
-    .item1:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-
-    .item2{
-        grid-column: 2/2;
-        background-image: url(imagenes/proteina3.png);
-        background-size: cover;
-        
-    }
-
-    .item2:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-
-    .item3{
-        grid-column: 3/3;
-        background-image: url(imagenes/proteina1.png);
-        background-size: cover;
-    }
-
-    .item3:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-    
-    .item4{
-        grid-column: 4/4;
-        background-image: url(imagenes/proteina5.png);
-        background-size: cover;
-        }
-
-    .item4:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-
-    .item5{
-        grid-column: 1/2;
-        background-image: url(imagenes/proteina6.png);
-        background-size: cover;
-    }
-
-    .item5:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-
-    .item6{
-        grid-column: 2/2;
-        background-image: url(imagenes/prework1.png);
-        background-size: cover;
-    }
-
-    .item6:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-    
-    .item7{
-        grid-column: 3/3;
-        background-image: url(imagenes/proteina7.png);
-        background-size: cover;
-    }
-    
-    .item7:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-    
-    .item8{
-        grid-column: 4/4;
-        background-image: url(imagenes/prework2.png);
-        background-size: cover;
-    }
-
-    .item8:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-
-    .item9{
-        grid-column: 1/2;
-        background-image: url(imagenes/prework3.png);
-        background-size: cover;
-    }
-
-    .item9:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-
-    .item10{
-        grid-column: 2/2;
-        background-image: url(imagenes/oxidonitrico1.png);
-        background-size: cover;
-    }
-
-    .item10:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-
-    .item11{
-        grid-column: 3/3;
-        background-image: url(imagenes/creatina1.png);
-        background-size: cover;
-    }
-
-    .item11:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-
-    .item12{
-        grid-column: 4/4;
-        background-image: url(imagenes/proteina2.png);
-        background-size: cover;
-    }
-
-    .item12:hover{
-        transform: scale(1.25);
-        transition: 0.4s;
-    }
-
-
-
-    /* -------------------- Contacto - inicio -------------------- */
-
-    #main-contacto{
-        padding-top: 3.25rem;
-    }
-    
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: 1px solid orange;
-        border-radius: 40px 40px 40px 40px;
-        background-color: rgb(54, 54, 54);
-        color: white;
-        font-size: 20px;
-        font-style: oblique;
-        height: 56.25rem;
-        }
-
-
-
-    /* -------------------- Preguntas - inicio -------------------- */
-
-
-    .preguntas{
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .titularpreguntas{
-        font-size: 40px;
-        color: white;
-        text-align: center;
-        justify-content: center;
-        padding: 5%;
-    }
-
-    /* -------------------- Galeria - inicio -------------------- */
-
-    #main-galeria{
-        height: 150vh;
-    }
-
-    .titular-galeria{
-        color: #fff;
-        font-size: 25px;
-        text-align: center;
-        padding: 2%;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        border: 1px solid gray;
-        background-color: grey;
-        box-shadow: 0 0 10px 0px
-    }
-
-    .container-galeria{
-        width: 100%;
-        height: 90%;
-        background-color: rgba(127, 255, 212, 0);
-        display: grid;
-        justify-items: center;
-        padding: 5%;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1%;
-        row-gap: 1%; 
-        }
-
-    .video{
-        background-color: rgba(255, 166, 0, 0);
-        border: 2px solid rgba(0, 0, 0, 0);
-        height: 420px;
-        width: 670px;
-    }
-
-    .video1{ 
-        grid-column: 1/1;
-    }
-
-    .video2{
-        grid-column: 2/2;
-    }
-
-    .video3{
-        grid-column: 2/1;
-    }
-
-    .video4{
-        grid-column: 2/2;
-    }
-
-
-
-    /* -------------------- Inicio del footer -------------------- */
-
-    footer{
-        width: 100%;
-        background: #202020;
-        color: white;   
-    
-    }
-    
-    .container-footer-all{
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        padding: 40px;
-    }
-    
-    .container-body{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .colum1{
-        max-width: 400px;
-    }
-    
-    .colum1 h1{
-        font-size: 22px;
-    }
-    
-    .colum1 p{
-        font-size: 14px;
-        color: #C7C7C7;
-        margin-top: 20px;
-    }
-    
-    .colum2{
-        max-width: 400px;
-    
-    }
-    
-    .colum2 h1{
-        font-size: 22px;
-    }
-    
-    .row{
-        margin-top: 20px;
-        display: flex;
-    }
-    
-    .row img{
-        width: 36px;
-        height: 36px;
-    }
-    
-    .row label{
-        margin-top: 10px;
-        margin-left: 20px;
-        color: #C7C7C7;
-    }
-    
-    .colum3{
-        max-width: 400px;
-    }
-    
-    .colum3 h1{
-        font-size: 22px;
-    }
-    
-    .row2{
-        margin-top: 20px;
-        display: flex;
-    }
-    
-    .row2 img{
-        width: 36px;
-        height: 36px;
-    }
-    
-    .row2 label{
-        margin-top: 10px;
-        margin-left: 20px;
-        max-width: 140px;
-    }
-    
-    .container-footer{
-        width: 100%;  
-        background: #101010;
-    }
-    
-    .footer{
-        max-width: 1200px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;  
-        padding: 20px;
-    }
-    
-    .copyright{
-        color: #C7C7C7;
-    }
-    
-    .copyright a{
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-    }
-    
-    .information a{
-        text-decoration: none;
-        color: #C7C7C7;
-    }
-
-
-    /* -------------------- Inicio -- media queries -------------------- */
-
-    /* -------------------- media del footer -------------------- */
-    
-    @media screen and (max-width: 1100px){
-    
-        .container-body{
-            flex-wrap: wrap;
-        }
-    
-        .colum1{
-            max-width: 100%;
-        }
-    
-        .colum2,
-        .colum3{
-            margin-top: 40px;
-        }
-    }
-
-    /* -------------------- media para tablets ---------------------- */
-
-    @media only screen and (max-width: 768px) {
-
-        /*-- header -- */
-
-        header{
-            height: 175px;
-        }
-
-        #logo{
-            height: 125px;
-        }
-
-        /* -- Home -- */
-        .container-home{
-            width: 100%;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            padding: 10%;
-        }
-
-        .item{
-            height: 155px;
-            width: 115px;
-        }
-
-        .item1{
-            grid-column: 1/2;
-            background-image: url(imagenes/proteina4.png);
-            background-size: cover;
-            
-        }
-    
-        .item2{
-            grid-column: 2/2;
-            background-image: url(imagenes/proteina3.png);
-            background-size: cover;
-            
-        }
-    
-        .item3{
-            grid-column: 3/3;
-            background-image: url(imagenes/proteina1.png);
-            background-size: cover;
-        }
-        
-        .item4{
-            grid-column: 4/4;
-            background-image: url(imagenes/proteina5.png);
-            background-size: cover;
-        }
-    
-        .item5{
-            grid-column: 1/2;
-            background-image: url(imagenes/proteina6.png);
-            background-size: cover;
-        }
-    
-        .item6{
-            grid-column: 2/2;
-            background-image: url(imagenes/prework1.png);
-            background-size: cover;
-        }
-        
-        .item7{
-            grid-column: 3/3;
-            background-image: url(imagenes/proteina7.png);
-            background-size: cover;
-            }
-        
-        .item8{
-            grid-column: 4/4;
-            background-image: url(imagenes/prework2.png);
-            background-size: cover;
-        }
-    
-        .item9{
-            grid-column: 1/2;
-            background-image: url(imagenes/prework3.png);
-            background-size: cover;
-        }
-    
-        .item10{
-            grid-column: 2/2;
-            background-image: url(imagenes/oxidonitrico1.png);
-            background-size: cover;
-        }
-    
-        .item11{
-            grid-column: 3/3;
-            background-image: url(imagenes/creatina1.png);
-            background-size: cover;
-        }
-    
-        .item12{
-            grid-column: 4/4;
-            background-image: url(imagenes/proteina2.png);
-            background-size: cover;
-        }
-        
-        /* -- Galeria -- */
-
-        .container-galeria{
-            width: 100%;
-            height: 80%;
-            display: grid;
-            justify-items: center;
-            grid-template-columns: 1fr 1fr ;
-            grid-template-rows: 1fr 1fr ;
-            padding: 2%;
-        }
-
-        .video{
-            height: 400px;
-            width: 350px;
-        }
-
-        .video1{ 
-            grid-column: 1/1;
-        }
-    
-        .video2{
-            grid-column: 2/2;
-        }
-    
-        .video3{
-            grid-column: 2/1;
-        }
-    
-        .video4{
-            grid-column: 2/2;
-        }
-
-        /* Contacto */
-        #main-contacto{
-            padding-top: 3.25rem;
-        }
-        
-        .container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 1px solid orange;
-            border-radius: 40px 40px 40px 40px;
-            background-color: rgb(54, 54, 54);
-            color: white;
-            font-size: 20px;
-            font-style: oblique;
-            height: 56.25rem;
-            }
-    }
-
-    /* -------------------- media para celulares -------------------- */
-
-    @media only screen and (max-width: 414px){ 
-    
-        /* -- logo -- */
-        #logo{
-            display: none;
-        }
-
-        /* -- home -- */
-
-        header{
-            height: 50px;
-        }
-
-        .carousel-indicators{
-            display: none !important;
-        }
-
-        .carousel-inner{
-            display: none !important;
-        }
-
-        .carousel-control-prev{
-            display: none !important;
-        }
-
-        .carousel-control-next{
-            display: none !important;
-        }
-
-        main{
-            height: 550vh;
-        }
-
-        .titular-main{
-            padding: 15px;
-        }
-
-        .container-home{
-            width: 100%;
+/* -------------------- media para celulares -------------------- */
+@media only screen and (max-width: 414px) {
+  /* -- logo -- */
+  #logo {
+    display: none;
+  }
+  /* -- home -- */
+  header {
+    height: 50px;
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
+  .carousel-inner {
+    display: none !important;
+  }
+  .carousel-control-prev {
+    display: none !important;
+  }
+  .carousel-control-next {
+    display: none !important;
+  }
+  main {
+    height: 550vh;
+  }
+  .titular-main {
+    padding: 15px;
+  }
+  .container-home {
+    width: 100%;
+    -webkit-column-gap: 1px;
             column-gap: 1px;
-            row-gap: 100px;
-            grid-template-columns: 100px;
-        }
-
-
-        .item{
-            height: 180px;
-            width: 120px;
-        }
-
-        .item1{
-            grid-column: 1/2;
-            background-image: url(imagenes/proteina4.png);
-            background-size: cover;
-            
-        }
-    
-        .item2{
-            grid-column: 1/2;
-            background-image: url(imagenes/proteina3.png);
-            background-size: cover;
-            
-        }
-    
-        .item3{
-            grid-column: 1/3;
-            background-image: url(imagenes/proteina1.png);
-            background-size: cover;
-        }
-        
-        .item4{
-            grid-column: 1/4;
-            background-image: url(imagenes/proteina5.png);
-            background-size: cover;
-        }
-    
-        .item5{
-            grid-column: 1/2;
-            background-image: url(imagenes/proteina6.png);
-            background-size: cover;
-        }
-    
-        .item6{
-            grid-column: 1/3;
-            background-image: url(imagenes/prework1.png);
-            background-size: cover;
-        }
-        
-        .item7{
-            grid-column: 1/4;
-            background-image: url(imagenes/proteina7.png);
-            background-size: cover;
-            }
-        
-        .item8{
-            grid-column: 1/5;
-            background-image: url(imagenes/prework2.png);
-            background-size: cover;
-        }
-    
-        .item9{
-            grid-column: 1/2;
-            background-image: url(imagenes/prework3.png);
-            background-size: cover;
-        }
-    
-        .item10{
-            grid-column: 1/3;
-            background-image: url(imagenes/oxidonitrico1.png);
-            background-size: cover;
-        }
-    
-        .item11{
-            grid-column: 1/4;
-            background-image: url(imagenes/creatina1.png);
-            background-size: cover;
-        }
-    
-        .item12{
-            grid-column: 1/5;
-            background-image: url(imagenes/proteina2.png);
-            background-size: cover;
-        }
-        
-        /* -- Contacto -- */
-
-        #main-contacto{
-            padding-top: 3.25rem;
-            height: 160vh;
-        }
-        
-        .container{
-            display: flex;
+    row-gap: 100px;
+    -ms-grid-columns: 100px;
+        grid-template-columns: 100px;
+  }
+  .container-home .item {
+    height: 180px;
+    width: 120px;
+  }
+  .container-home .item1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(imagenes/proteina4.png);
+    background-size: cover;
+  }
+  .container-home .item2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(imagenes/proteina3.png);
+    background-size: cover;
+  }
+  .container-home .item3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    background-image: url(imagenes/proteina1.png);
+    background-size: cover;
+  }
+  .container-home .item4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    background-image: url(imagenes/proteina5.png);
+    background-size: cover;
+  }
+  .container-home .item5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(imagenes/proteina6.png);
+    background-size: cover;
+  }
+  .container-home .item6 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    background-image: url(imagenes/prework1.png);
+    background-size: cover;
+  }
+  .container-home .item7 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    background-image: url(imagenes/proteina7.png);
+    background-size: cover;
+  }
+  .container-home .item8 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    background-image: url(imagenes/prework2.png);
+    background-size: cover;
+  }
+  .container-home .item9 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    background-image: url(imagenes/prework3.png);
+    background-size: cover;
+  }
+  .container-home .item10 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    background-image: url(imagenes/oxidonitrico1.png);
+    background-size: cover;
+  }
+  .container-home .item11 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    background-image: url(imagenes/creatina1.png);
+    background-size: cover;
+  }
+  .container-home .item12 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    background-image: url(imagenes/proteina2.png);
+    background-size: cover;
+  }
+  /* -- Contacto -- */
+  #main-contacto {
+    padding-top: 3.25rem;
+    height: 160vh;
+  }
+  #main-contacto .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
             justify-content: center;
-            border: 1px solid orange;
-            border-radius: 40px 40px 40px 40px;
-            background-color: rgb(54, 54, 54);
-            color: white;
-            font-size: 20px;
-            font-style: oblique;
-            height: 56.25rem;
-            }
+    border: 1px solid orange;
+    border-radius: 40px 40px 40px 40px;
+    background-color: #363636;
+    color: white;
+    font-size: 20px;
+    font-style: oblique;
+    height: 56.25rem;
+  }
+  /* -- Preguntas frecuentes -- */
+  #main-preguntas {
+    height: 195vh;
+  }
+  /* -- Galeria -- */
+  .container-galeria {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0);
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .container-galeria .video {
+    background-color: rgba(255, 166, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 250px;
+    width: 100%;
+  }
+  .container-galeria .video .video1 {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+  .container-galeria .video .video2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container-galeria .video .video3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .container-galeria .video .video4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+}
 
-        /* -- Preguntas frecuentes -- */
+/* media de celulares en horizontal */
+@media only screen and (min-width: 414px) {
+  main {
+    height: 300vh;
+  }
+  #main-galeria {
+    height: 280vh;
+  }
+}
 
-        #main-preguntas{
-            height: 195vh;
-        }
-
-        /* -- Galeria -- */
-
-        #main-galeria{
-            height: 195vh;
-        }
-        
-        .container-galeria{
-            width: 100%;
-            height: 100%;
-            background-color: rgba(127, 255, 212, 0);
-            display: grid;
-            justify-items: center;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr ;
-            }
-    
-        .video{
-            background-color: rgba(255, 166, 0, 0);
-            border: 1px solid rgba(0, 0, 0, 0);
-            height: 250px;
-            width: 280px;
-        }
-    
-        .video1{ 
-            grid-column: 1/1;
-        }
-    
-        .video2{
-            grid-column: 1/2;
-        }
-    
-        .video3{
-            grid-column: 1/3;
-        }
-    
-        .video4{
-            grid-column: 1/4;
-        }
-    }
-
-    /* media de celulares en horizontal */
-    @media only screen and (min-width: 414px) {
-
-    main{
-        height: 300vh;
-    }
-
-    #main-galeria{
-        height: 280vh;
-    }
-
-    }
-
-    /* media de iphone 6/7/8 plus (y no plus) en vertical */
-    @media only screen and (max-width:736px) {
-
-    main{
-        height: 510vh;
-    }
-
-    #main-galeria{
-        height: 280vh;
-    }
-
-    .video{
-        height: 250px;
-        width: 280px;
-    }
-
-    }
+/* media de iphone 6/7/8 plus (y no plus) en vertical */
+@media only screen and (max-width: 736px) {
+  main {
+    height: 510vh;
+  }
+  #main-galeria {
+    height: 300vh;
+  }
+  .video {
+    height: 250px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,16 @@
+/* -------------------- contacto - inicio ------------------------ */
+#main-contacto{
+    padding-top: 3.25rem;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid orange;
+        border-radius: 40px 40px 40px 40px;
+        background-color: rgb(54, 54, 54);
+        color: $color1;
+        font-size: 20px;
+        font-style: oblique;
+        height: 56.25rem;
+        }
+    }

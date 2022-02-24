@@ -1,0 +1,331 @@
+
+// ---------------- Variables -------------- // 
+$color1: white;
+$porcentajemax: 100%;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* -------------------- logo -------------------- */
+
+#logo{
+    background-image: url(imagenes/logo.png);
+    height: 115px;
+    width: $porcentajemax;
+    background-repeat: no-repeat;
+    }
+
+/* -------------------- Navegador -------------------- */
+
+header{
+    background-color: #202020;
+    height: 170px;
+    width: $porcentajemax;
+    }
+
+.navbar{
+    height: 50px;
+    background-color: #2e2e2e !important;
+    z-index: 1;
+    li{
+        padding-left: 20px;
+        }
+    }
+
+
+.navbar-nav .nav-link{
+    padding-left: 10px !important;
+    }
+
+.nav-item a{
+    padding: 5px ;
+    color: $color1;
+    background-color: #0a0909;
+    border: 4px outset #A4A4A4;
+    border-radius: 40px 40px 40px 40px;
+    font-size: 18px;
+    }
+
+nav a:hover{
+    color: orangered !important;
+    border: 0.1rem solid rgb(156, 156, 156);
+    background: linear-gradient(
+    90deg,
+    rgb(94, 93, 93) 22%,
+    rgb(0, 0, 0) 100%
+    );
+    transform: scale(1.05);
+    transition: 0.2s;
+    }
+
+    /* -------------------- banner - inicio -------------------- */
+    main{
+        height: 120vh;
+        width: $porcentajemax;
+        background-image: url(imagenes/fondo.png);
+        background-size: cover;
+        background-position: center;
+        }
+    /* -------------------- banner - fin  -------------------- */
+    
+    
+
+    /* -------------------- home seccion -------------------- */
+
+    /* -------------------- carrusel - inicio ----------------------- */
+    
+    .img2{
+        width: $porcentajemax;
+        height: 43.75em;
+        }
+
+    .carousel-indicators li{
+        height: 15px !important;
+        width: 15px !important;
+        border-radius: 50%;
+        }
+
+    
+    /* -------------------- carrusel - fin ------------------------ */
+
+
+    .titular-main{
+        color: $color1;
+        font-size: 25px;
+        text-align: center;
+        padding: 2%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1px solid gray;
+        background-color: grey;
+        box-shadow: 0 0 10px 0px
+        }
+
+    .container-home{
+        width: $porcentajemax;
+        height: 900px;
+        background-color: rgba(127, 255, 212, 0);
+        display: grid;
+        padding: 50px;
+        grid-template-columns:200px 200px 200px 200px;
+        gap: 60px;
+        justify-content: center;
+        .item{
+            background-color: rgba(255, 166, 0, 0);
+            border: 2px solid rgba(0, 0, 0, 0);
+            height: 200px;
+            width: 155px;
+            }
+        .item1{
+            grid-column: 1/2;
+            background-image: url(imagenes/proteina4.png);
+            background-size: cover;
+            
+            }
+        .item1:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item2{
+            grid-column: 2/2;
+            background-image: url(imagenes/proteina3.png);
+            background-size: cover;
+            
+            }
+        .item2:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item3{
+            grid-column: 3/3;
+            background-image: url(imagenes/proteina1.png);
+            background-size: cover;
+            }
+        .item3:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item4{
+            grid-column: 4/4;
+            background-image: url(imagenes/proteina5.png);
+            background-size: cover;
+            }
+        .item4:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item5{
+            grid-column: 1/2;
+            background-image: url(imagenes/proteina6.png);
+            background-size: cover;
+            }
+        .item5:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item6{
+            grid-column: 2/2;
+            background-image: url(imagenes/prework1.png);
+            background-size: cover;
+            }
+        .item6:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item7{
+            grid-column: 3/3;
+            background-image: url(imagenes/proteina7.png);
+            background-size: cover;
+            }
+        .item7:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item8{
+            grid-column: 4/4;
+            background-image: url(imagenes/prework2.png);
+            background-size: cover;
+            }
+        .item8:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item9{
+            grid-column: 1/2;
+            background-image: url(imagenes/prework3.png);
+            background-size: cover;
+            }
+        .item9:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item10{
+            grid-column: 2/2;
+            background-image: url(imagenes/oxidonitrico1.png);
+            background-size: cover;
+            }
+        .item10:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item11{
+            grid-column: 3/3;
+            background-image: url(imagenes/creatina1.png);
+            background-size: cover;
+            }
+        .item11:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        .item12{
+            grid-column: 4/4;
+            background-image: url(imagenes/proteina2.png);
+            background-size: cover;
+            }
+        .item12:hover{
+            transform: scale(1.25);
+            transition: 0.4s;
+            }
+        }
+
+            /* -------------------- Inicio del footer -------------------- */
+
+    footer{
+        width: $porcentajemax;
+        background: #202020;
+        color: $color1;   
+        }
+    
+    .container-footer-all{
+        width: $porcentajemax;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px;
+        .container-body{
+            display: flex;
+            justify-content: space-between;
+            .colum1{
+                max-width: 400px;
+                h1{
+                    font-size: 22px;
+                    }
+                p{
+                    font-size: 14px;
+                    color: #C7C7C7;
+                    margin-top: 20px;
+                    }
+                }
+            .colum2{
+                max-width: 400px;
+                h1{
+                    font-size: 22px;
+                    }
+                }
+            .row{
+                margin-top: 20px;
+                display: flex;
+                img{
+                    width: 36px;
+                    height: 36px;
+                    }
+                label{
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    color: #C7C7C7;
+                    }
+                }
+            .colum3{
+                max-width: 400px;
+                h1{
+                    font-size: 22px;
+                    }
+                .row2{
+                    margin-top: 20px;
+                    display: flex;
+                    img{
+                        width: 36px;
+                        height: 36px;
+                        }
+                    label{
+                        margin-top: 10px;
+                        margin-left: 20px;
+                        max-width: 140px;
+                        }
+                    }
+                }
+            }
+        }
+
+    .container-footer{
+        width: $porcentajemax;  
+        background: #101010;
+        .footer{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;  
+            padding: 20px;
+            .copyright{
+                color: #C7C7C7;
+                a{
+                    text-decoration: none;
+                    color: $color1;
+                    font-weight: bold;
+                    }
+                }
+            .information a{
+                text-decoration: none;
+                color: #C7C7C7;
+                }
+            }
+        }
+
+@import "_contacto";
+@import "_preguntas";
+@import "_galeria";
+@import "_mediaqueris";
