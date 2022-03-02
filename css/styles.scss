@@ -1,7 +1,31 @@
 
 // ---------------- Variables -------------- // 
+
 $color1: white;
-$porcentajemax: 100%;
+$size1: 100%;
+
+// --------------- Imports ------------------ //
+
+@import "_contacto";
+@import "_preguntas";
+@import "_galeria";
+@import "_mediaqueris";
+
+// --------------- mixin -------------------- //
+
+@mixin sizes {
+    height: $size1;
+    height: $size1;
+}
+
+// --------------- mapa -------------------- //
+
+$colors: (
+    color1: purple,
+    color2: red,
+    color3: orange,
+    );
+
 
 
 *{
@@ -26,7 +50,7 @@ $porcentajemax: 100%;
 header{
     background-color: #202020;
     height: 170px;
-    width: $porcentajemax;
+    width: $size1;
     }
 
 .navbar{
@@ -65,56 +89,60 @@ nav a:hover{
     }
 
     /* -------------------- banner - inicio -------------------- */
-    main{
-        height: 120vh;
-        width: $porcentajemax;
-        background-image: url(imagenes/fondo.png);
-        background-size: cover;
-        background-position: center;
-        }
+
+main{
+    height: 120vh;
+    width: $size1;
+    background-image: url(imagenes/fondo.png);
+    background-size: cover;
+    background-position: center;
+    }
+
     /* -------------------- banner - fin  -------------------- */
-    
-    
+
+
 
     /* -------------------- home seccion -------------------- */
 
+
+
     /* -------------------- carrusel - inicio ----------------------- */
-    
-    .img2{
-        width: $porcentajemax;
-        height: 43.75em;
-        }
 
-    .carousel-indicators li{
-        height: 15px !important;
-        width: 15px !important;
-        border-radius: 50%;
-        }
+.img2{
+    width: $size1;
+    height: 43.75em;
+    }
 
-    
+.carousel-indicators li{
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50%;
+    }
+
+
     /* -------------------- carrusel - fin ------------------------ */
+    
 
+.titular-main{
+    color: $color1;
+    font-size: 25px;
+    text-align: center;
+    padding: 2%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid gray;
+    background-color: grey;
+    box-shadow: 0 0 10px 0px
+    }
 
-    .titular-main{
-        color: $color1;
-        font-size: 25px;
-        text-align: center;
-        padding: 2%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        border: 1px solid gray;
-        background-color: grey;
-        box-shadow: 0 0 10px 0px
-        }
-
-    .container-home{
-        width: $porcentajemax;
-        height: 900px;
-        background-color: rgba(127, 255, 212, 0);
-        display: grid;
-        padding: 50px;
-        grid-template-columns:200px 200px 200px 200px;
-        gap: 60px;
-        justify-content: center;
+.container-home{
+    width: $size1;
+    height: 900px;
+    background-color: rgba(127, 255, 212, 0);
+    display: grid;
+    padding: 50px;
+    grid-template-columns:200px 200px 200px 200px;
+    gap: 60px;
+    justify-content: center;
         .item{
             background-color: rgba(255, 166, 0, 0);
             border: 2px solid rgba(0, 0, 0, 0);
@@ -138,8 +166,7 @@ nav a:hover{
             
             }
         .item2:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item3{
             grid-column: 3/3;
@@ -147,8 +174,7 @@ nav a:hover{
             background-size: cover;
             }
         .item3:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item4{
             grid-column: 4/4;
@@ -156,8 +182,7 @@ nav a:hover{
             background-size: cover;
             }
         .item4:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item5{
             grid-column: 1/2;
@@ -165,8 +190,7 @@ nav a:hover{
             background-size: cover;
             }
         .item5:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item6{
             grid-column: 2/2;
@@ -174,8 +198,7 @@ nav a:hover{
             background-size: cover;
             }
         .item6:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item7{
             grid-column: 3/3;
@@ -183,8 +206,7 @@ nav a:hover{
             background-size: cover;
             }
         .item7:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item8{
             grid-column: 4/4;
@@ -192,8 +214,7 @@ nav a:hover{
             background-size: cover;
             }
         .item8:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item9{
             grid-column: 1/2;
@@ -201,8 +222,7 @@ nav a:hover{
             background-size: cover;
             }
         .item9:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item10{
             grid-column: 2/2;
@@ -210,8 +230,7 @@ nav a:hover{
             background-size: cover;
             }
         .item10:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item11{
             grid-column: 3/3;
@@ -219,8 +238,7 @@ nav a:hover{
             background-size: cover;
             }
         .item11:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
         .item12{
             grid-column: 4/4;
@@ -228,45 +246,62 @@ nav a:hover{
             background-size: cover;
             }
         .item12:hover{
-            transform: scale(1.25);
-            transition: 0.4s;
+            @extend .item1:hover 
             }
-        }
+    }
 
-            /* -------------------- Inicio del footer -------------------- */
 
-    footer{
-        width: $porcentajemax;
-        background: #202020;
-        color: $color1;   
-        }
-    
-    .container-footer-all{
-        width: $porcentajemax;
-        max-width: 1200px;
-        margin: auto;
-        padding: 40px;
-        .container-body{
+
+footer{
+    width: $size1;
+    background: #202020;
+    color: $color1;   
+    }
+
+.container-footer-all{
+    width: $size1;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    .container-body{
+        display: flex;
+        justify-content: space-between;
+        .colum1{
+            max-width: 400px;
+            h1{
+                font-size: 22px;
+                }
+            p{
+                font-size: 14px;
+                color: #C7C7C7;
+                margin-top: 20px;
+                }
+            }
+        .colum2{
+            max-width: 400px;
+            h1{
+                font-size: 22px;
+                }
+            }
+        .row{
+            margin-top: 20px;
             display: flex;
-            justify-content: space-between;
-            .colum1{
-                max-width: 400px;
-                h1{
-                    font-size: 22px;
-                    }
-                p{
-                    font-size: 14px;
-                    color: #C7C7C7;
-                    margin-top: 20px;
-                    }
+            img{
+                width: 36px;
+                height: 36px;
                 }
-            .colum2{
-                max-width: 400px;
-                h1{
-                    font-size: 22px;
-                    }
+            label{
+                margin-top: 10px;
+                margin-left: 20px;
+                color: #C7C7C7;
                 }
-            .row{
+            }
+        .colum3{
+            max-width: 400px;
+            h1{
+                font-size: 22px;
+                }
+            .row2{
                 margin-top: 20px;
                 display: flex;
                 img{
@@ -276,56 +311,35 @@ nav a:hover{
                 label{
                     margin-top: 10px;
                     margin-left: 20px;
-                    color: #C7C7C7;
-                    }
-                }
-            .colum3{
-                max-width: 400px;
-                h1{
-                    font-size: 22px;
-                    }
-                .row2{
-                    margin-top: 20px;
-                    display: flex;
-                    img{
-                        width: 36px;
-                        height: 36px;
-                        }
-                    label{
-                        margin-top: 10px;
-                        margin-left: 20px;
-                        max-width: 140px;
-                        }
+                    max-width: 140px;
                     }
                 }
             }
         }
+    }
 
-    .container-footer{
-        width: $porcentajemax;  
-        background: #101010;
-        .footer{
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;  
-            padding: 20px;
-            .copyright{
-                color: #C7C7C7;
-                a{
-                    text-decoration: none;
-                    color: $color1;
-                    font-weight: bold;
-                    }
-                }
-            .information a{
+.container-footer{
+    width: $size1;  
+    background: #101010;
+    .footer{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;  
+        padding: 20px;
+        .copyright{
+            color: #C7C7C7;
+            a{
                 text-decoration: none;
-                color: #C7C7C7;
+                color: $color1;
+                font-weight: bold
                 }
             }
+        .information a{
+            text-decoration: none;
+            color: #C7C7C7;
+            }
         }
+    }
 
-@import "_contacto";
-@import "_preguntas";
-@import "_galeria";
-@import "_mediaqueris";
+

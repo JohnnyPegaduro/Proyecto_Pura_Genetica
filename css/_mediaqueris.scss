@@ -2,170 +2,168 @@
 
     /* -------------------- media del footer -------------------- */
     
-    @media screen and (max-width: 1100px){
-        
-        .container-body{
-            flex-wrap: wrap;
-            }
-        .colum1{
-            max-width: $porcentajemax;
-            }
-        .colum2,
-        .colum3{
-            margin-top: 40px;
-            }
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
         }
+    .colum1{
+        max-width: $porcentajemax;
+        }
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+        }
+    }
 
     /* -------------------- media para tablets ---------------------- */
 
-    @media only screen and (max-width: 812px) {
+@media only screen and (max-width: 812px) {
 
-        /*-- header -- */
+    /*-- header -- */
 
-        header{
-            height: 175px;
+    header{
+        height: 175px;
+        }
+
+    #logo{
+        height: 125px;
+        }
+
+    /* -- Home -- */
+    .container-home{
+        width: $porcentajemax;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 10%;
+        .item{
+            height: 155px;
+            width: 115px;
             }
-
-        #logo{
-            height: 125px;
+        .item1{
+            grid-column: 1/2;
+            background-image: url(imagenes/proteina4.png);
+            background-size: cover;
+            
             }
-
-        /* -- Home -- */
-        .container-home{
-            width: $porcentajemax;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            padding: 10%;
-            .item{
-                height: 155px;
-                width: 115px;
-                }
-            .item1{
-                grid-column: 1/2;
-                background-image: url(imagenes/proteina4.png);
-                background-size: cover;
-                
-                }
-            
-            .item2{
-                grid-column: 2/2;
-                background-image: url(imagenes/proteina3.png);
-                background-size: cover;
-                
-                }
-            
-            .item3{
-                grid-column: 3/3;
-                background-image: url(imagenes/proteina1.png);
-                background-size: cover;
-                }
-            
-            .item4{
-                grid-column: 4/4;
-                background-image: url(imagenes/proteina5.png);
-                background-size: cover;
-                }
-            
-            .item5{
-                grid-column: 1/2;
-                background-image: url(imagenes/proteina6.png);
-                background-size: cover;
-                }
-            
-            .item6{
-                grid-column: 2/2;
-                background-image: url(imagenes/prework1.png);
-                background-size: cover;
-                }
-            
-            .item7{
-                grid-column: 3/3;
-                background-image: url(imagenes/proteina7.png);
-                background-size: cover;
-                }
-            
-            .item8{
-                grid-column: 4/4;
-                background-image: url(imagenes/prework2.png);
-                background-size: cover;
-                }
-            
-            .item9{
-                grid-column: 1/2;
-                background-image: url(imagenes/prework3.png);
-                background-size: cover;
-                }
-            
-            .item10{
-                grid-column: 2/2;
-                background-image: url(imagenes/oxidonitrico1.png);
-                background-size: cover;
-                }
-            
-            .item11{
-                grid-column: 3/3;
-                background-image: url(imagenes/creatina1.png);
-                background-size: cover;
-                }
         
-            .item12{
-                grid-column: 4/4;
-                background-image: url(imagenes/proteina2.png);
-                background-size: cover;
-                }
+        .item2{
+            grid-column: 2/2;
+            background-image: url(imagenes/proteina3.png);
+            background-size: cover;
+            
             }
+        
+        .item3{
+            grid-column: 3/3;
+            background-image: url(imagenes/proteina1.png);
+            background-size: cover;
+            }
+        
+        .item4{
+            grid-column: 4/4;
+            background-image: url(imagenes/proteina5.png);
+            background-size: cover;
+            }
+        
+        .item5{
+            grid-column: 1/2;
+            background-image: url(imagenes/proteina6.png);
+            background-size: cover;
+            }
+        
+        .item6{
+            grid-column: 2/2;
+            background-image: url(imagenes/prework1.png);
+            background-size: cover;
+            }
+        
+        .item7{
+            grid-column: 3/3;
+            background-image: url(imagenes/proteina7.png);
+            background-size: cover;
+            }
+        
+        .item8{
+            grid-column: 4/4;
+            background-image: url(imagenes/prework2.png);
+            background-size: cover;
+            }
+        
+        .item9{
+            grid-column: 1/2;
+            background-image: url(imagenes/prework3.png);
+            background-size: cover;
+            }
+    
+        .item10{
+            grid-column: 2/2;
+            background-image: url(imagenes/oxidonitrico1.png);
+            background-size: cover;
+            }
+        
+        .item11{
+            grid-column: 3/3;
+            background-image: url(imagenes/creatina1.png);
+            background-size: cover;
+            }
+        
+        .item12{
+            grid-column: 4/4;
+            background-image: url(imagenes/proteina2.png);
+            background-size: cover;
+            }
+        }
 
         
         /* -- Galeria -- */
 
-        .container-galeria{
-            width: $porcentajemax;
-            height: 100%;
-            display: grid;
-            justify-items: center;
-            grid-template-columns: 1fr, 1fr, 1fr ;
-            grid-template-rows: 1fr, 1fr ;
-            padding: 2%;
-            .video{
-                height: 300px;
-                width: 100%;
-                
-                .video1{ 
-                    grid-column: 1/1;
-                    }
-                
-                .video2{
-                    grid-column: 2/2;
-                    }
-                
-                .video3{
-                    grid-column: 2/1;
-                    }
-                
-                .video4{
-                    grid-column: 2/2;
-                    }
+    .container-galeria{
+        @include sizes;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr, 1fr, 1fr ;
+        grid-template-rows: 1fr, 1fr ;
+        padding: 2%;
+        .video{
+            height: 300px;
+            width: $size1;
+            .video1{ 
+                grid-column: 1/1;
                 }
-            }   
-
-
-        /* Contacto */
-        #main-contacto{
-            padding-top: 3.25rem;
-            .container{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                border: 1px solid orange;
-                border-radius: 40px 40px 40px 40px;
-                background-color: rgb(54, 54, 54);
-                color: $color1;
-                font-size: 20px;
-                font-style: oblique;
-                height: 56.25rem;
+            
+            .video2{
+                grid-column: 2/2;
+                }
+            
+            .video3{
+                grid-column: 2/1;
+                }
+            
+            .video4{
+                grid-column: 2/2;
                 }
             }
+        }   
+
+
+    /* Contacto */
+    #main-contacto{
+        padding-top: 3.25rem;
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid orange;
+            border-radius: 40px 40px 40px 40px;
+            background-color: rgb(54, 54, 54);
+            color: $color1;
+            font-size: 20px;
+            font-style: oblique;
+            height: 56.25rem;
+            }
         }
+    }
 
     /* -------------------- media para celulares -------------------- */
 
@@ -207,7 +205,7 @@
             }
 
         .container-home{
-            width: $porcentajemax;
+            width: $size1;
             column-gap: 1px;
             row-gap: 100px;
             grid-template-columns: 100px;
@@ -319,8 +317,7 @@
         /* -- Galeria -- */
 
             .container-galeria{
-                width: $porcentajemax;
-                height: $porcentajemax;
+                @include sizes;
                 background-color: rgba(127, 255, 212, 0);
                 display: grid;
                 justify-items: center;
@@ -377,7 +374,7 @@
 
     .video{
         height: 250px;
-        width: 100%;
+        width: $size1;
     }
 
     }
