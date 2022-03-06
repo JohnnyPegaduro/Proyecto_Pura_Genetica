@@ -9,8 +9,6 @@ $size1: 100%;
 @import "_contacto";
 @import "_preguntas";
 @import "_galeria";
-@import "_mediaqueris";
-
 
 // --------------- mapa -------------------- //
 
@@ -335,5 +333,397 @@ footer{
             }
         }
     }
+
+    /* -------------------- Inicio -- media queries -------------------- */
+
+    /* -------------------- media del footer -------------------- */
+    
+    @media screen and (max-width: 1100px){
+    
+        .container-body{
+            flex-wrap: wrap;
+            }
+        .colum1{
+            max-width: $size1;
+            }
+        .colum2,
+        .colum3{
+            margin-top: 40px;
+            }
+        }
+    
+        /* -------------------- media para tablets ---------------------- */
+    
+    @media only screen and (max-width: 812px) {
+    
+        /*-- header -- */
+    
+        header{
+            height: 175px;
+            }
+    
+        #logo{
+            height: 125px;
+            }
+    
+        /* -- Home -- */
+        .container-home{
+            width: $size1;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 10%;
+            .item{
+                height: 155px;
+                width: 115px;
+                }
+            .item1{
+                grid-column: 1/2;
+                background-image: url(imagenes/proteina4.png);
+                background-size: cover;
+                
+                }
+            
+            .item2{
+                grid-column: 2/2;
+                background-image: url(imagenes/proteina3.png);
+                background-size: cover;
+                
+                }
+            
+            .item3{
+                grid-column: 3/3;
+                background-image: url(imagenes/proteina1.png);
+                background-size: cover;
+                }
+            
+            .item4{
+                grid-column: 4/4;
+                background-image: url(imagenes/proteina5.png);
+                background-size: cover;
+                }
+            
+            .item5{
+                grid-column: 1/2;
+                background-image: url(imagenes/proteina6.png);
+                background-size: cover;
+                }
+            
+            .item6{
+                grid-column: 2/2;
+                background-image: url(imagenes/prework1.png);
+                background-size: cover;
+                }
+            
+            .item7{
+                grid-column: 3/3;
+                background-image: url(imagenes/proteina7.png);
+                background-size: cover;
+                }
+            
+            .item8{
+                grid-column: 4/4;
+                background-image: url(imagenes/prework2.png);
+                background-size: cover;
+                }
+            
+            .item9{
+                grid-column: 1/2;
+                background-image: url(imagenes/prework3.png);
+                background-size: cover;
+                }
+        
+            .item10{
+                grid-column: 2/2;
+                background-image: url(imagenes/oxidonitrico1.png);
+                background-size: cover;
+                }
+            
+            .item11{
+                grid-column: 3/3;
+                background-image: url(imagenes/creatina1.png);
+                background-size: cover;
+                }
+            
+            .item12{
+                grid-column: 4/4;
+                background-image: url(imagenes/proteina2.png);
+                background-size: cover;
+                }
+            }
+    
+            
+            /* -- Galeria -- */
+    
+        // --------------- mixin -------------------- //
+    
+        @mixin tamaño{
+            height: 100%;
+            width: 100%;
+        }
+    
+        .container-galeria{
+            @include tamaño();
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr, 1fr, 1fr ;
+            grid-template-rows: 1fr, 1fr ;
+            padding: 2%;
+            .video{
+                height: 300px;
+                width: $size1;
+                .video1{ 
+                    grid-column: 1/1;
+                    }
+                
+                .video2{
+                    grid-column: 2/2;
+                    }
+                
+                .video3{
+                    grid-column: 2/1;
+                    }
+                
+                .video4{
+                    grid-column: 2/2;
+                    }
+                }
+            }   
+    
+    
+        /* Contacto */
+        #main-contacto{
+            padding-top: 3.25rem;
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid orange;
+                border-radius: 40px 40px 40px 40px;
+                background-color: rgb(54, 54, 54);
+                color: $color1;
+                font-size: 20px;
+                font-style: oblique;
+                height: 56.25rem;
+                }
+            }
+        }
+    
+        /* -------------------- media para celulares -------------------- */
+    
+        @media only screen and (max-width: 414px){ 
+        
+            /* -- logo -- */
+            #logo{
+                display: none;
+                }
+    
+            /* -- home -- */
+    
+            header{
+                height: 50px;
+                }
+    
+            .carousel-indicators{
+                display: none !important;
+                }
+    
+            .carousel-inner{
+                display: none !important;
+                }
+    
+            .carousel-control-prev{
+                display: none !important;
+                }
+    
+            .carousel-control-next{
+                display: none !important;
+                }
+    
+            main{
+                height: 550vh;
+                }
+    
+            .titular-main{
+                padding: 15px;
+                }
+    
+            .container-home{
+                width: $size1;
+                column-gap: 1px;
+                row-gap: 100px;
+                grid-template-columns: 100px;
+                .item{
+                    height: 180px;
+                    width: 120px;
+                    }
+                .item1{
+                    grid-column: 1/2;
+                    background-image: url(imagenes/proteina4.png);
+                    background-size: cover;
+                    
+                    }
+            
+                .item2{
+                    grid-column: 1/2;
+                    background-image: url(imagenes/proteina3.png);
+                    background-size: cover;
+                    
+                    }
+            
+                .item3{
+                    grid-column: 1/3;
+                    background-image: url(imagenes/proteina1.png);
+                    background-size: cover;
+                    }
+                
+                .item4{
+                    grid-column: 1/4;
+                    background-image: url(imagenes/proteina5.png);
+                    background-size: cover;
+                    }
+            
+                .item5{
+                    grid-column: 1/2;
+                    background-image: url(imagenes/proteina6.png);
+                    background-size: cover;
+                    }
+            
+                .item6{
+                    grid-column: 1/3;
+                    background-image: url(imagenes/prework1.png);
+                    background-size: cover;
+                    }
+                
+                .item7{
+                    grid-column: 1/4;
+                    background-image: url(imagenes/proteina7.png);
+                    background-size: cover;
+                    }
+                
+                .item8{
+                    grid-column: 1/5;
+                    background-image: url(imagenes/prework2.png);
+                    background-size: cover;
+                    }
+            
+                .item9{
+                    grid-column: 1/2;
+                    background-image: url(imagenes/prework3.png);
+                    background-size: cover;
+                    }
+            
+                .item10{
+                    grid-column: 1/3;
+                    background-image: url(imagenes/oxidonitrico1.png);
+                    background-size: cover;
+                    }
+            
+                .item11{
+                    grid-column: 1/4;
+                    background-image: url(imagenes/creatina1.png);
+                    background-size: cover;
+                    }
+            
+                .item12{
+                    grid-column: 1/5;
+                    background-image: url(imagenes/proteina2.png);
+                    background-size: cover;
+                    }
+                }
+    
+            
+            /* -- Contacto -- */
+    
+            #main-contacto{
+                padding-top: 3.25rem;
+                height: 160vh;
+                .container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    border: 1px solid orange;
+                    border-radius: 40px 40px 40px 40px;
+                    background-color: rgb(54, 54, 54);
+                    color: $color1;
+                    font-size: 20px;
+                    font-style: oblique;
+                    height: 56.25rem;
+                    }
+                }
+    
+            /* -- Preguntas frecuentes -- */
+    
+            #main-preguntas{
+                height: 195vh;
+            }
+    
+            /* -- Galeria -- */
+            @mixin tamaño{
+                height: 100%;
+                width: 100%;
+            }
+    
+            .container-galeria{
+                @include tamaño(); 
+                background-color: rgba(127, 255, 212, 0);
+                display: grid;
+                justify-items: center;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr ;
+                .video{
+                    background-color: rgba(255, 166, 0, 0);
+                    border: 1px solid rgba(0, 0, 0, 0);
+                    height: 250px;
+                    width: 100%;
+                    .video1{ 
+                        grid-column: 1/1;
+                        }
+                    
+                    .video2{
+                        grid-column: 1/2;
+                        }
+                    
+                    .video3{
+                        grid-column: 1/3;
+                        }
+                        
+                    .video4{
+                        grid-column: 1/4;
+                        }
+                    }
+                }
+            }
+            
+    
+        /* media de celulares en horizontal */
+        @media only screen and (min-width: 414px) {
+    
+        main{
+            height: 300vh;
+        }
+    
+        #main-galeria{
+            height: 280vh;
+        }
+    
+        }
+    
+        /* media de iphone 6/7/8 plus (y no plus) en vertical */
+        @media only screen and (max-width:736px) {
+    
+        main{
+            height: 510vh;
+        }
+    
+        #main-galeria{
+            height: 300vh;
+        }
+    
+        .video{
+            height: 250px;
+            width: $size1;
+        }
+    
+        }
 
 
