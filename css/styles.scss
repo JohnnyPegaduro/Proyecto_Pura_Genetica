@@ -11,12 +11,6 @@ $size1: 100%;
 @import "_galeria";
 @import "_mediaqueris";
 
-// --------------- mixin -------------------- //
-
-@mixin sizes {
-    height: $size1;
-    height: $size1;
-}
 
 // --------------- mapa -------------------- //
 
@@ -41,7 +35,7 @@ $colors: (
 #logo{
     background-image: url(imagenes/logo.png);
     height: 115px;
-    width: $porcentajemax;
+    width: $size1;
     background-repeat: no-repeat;
     }
 
