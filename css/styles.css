@@ -1,6 +1,7 @@
 /* -------------------- contacto - inicio ------------------------ */
 #main-contacto {
   padding-top: 3.25rem;
+  height: 120vh;
 }
 
 #main-contacto .container {
@@ -24,6 +25,10 @@
 }
 
 /* -------------------- Preguntas - inicio -------------------- */
+#main-preguntas {
+  height: 90vh;
+}
+
 .titularpreguntas {
   font-size: 40px;
   color: white;
@@ -730,7 +735,7 @@ footer {
   /* -- Contacto -- */
   #main-contacto {
     padding-top: 3.25rem;
-    height: 160vh;
+    height: 150vh;
   }
   #main-contacto .container {
     display: -webkit-box;
@@ -797,11 +802,17 @@ footer {
 
 /* media de celulares en horizontal */
 @media only screen and (min-width: 414px) {
+  #main-contacto {
+    height: 280vh;
+  }
   main {
-    height: 300vh;
+    height: 280vh;
   }
   #main-galeria {
     height: 280vh;
+  }
+  #main-preguntas {
+    height: 200vh;
   }
 }
 
