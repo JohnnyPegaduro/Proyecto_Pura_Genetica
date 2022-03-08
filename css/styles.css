@@ -819,7 +819,7 @@ footer {
 /* media de iphone 6/7/8 plus (y no plus) en vertical */
 @media only screen and (max-width: 736px) {
   main {
-    height: 510vh;
+    height: 540vh;
   }
   #main-galeria {
     height: 300vh;
