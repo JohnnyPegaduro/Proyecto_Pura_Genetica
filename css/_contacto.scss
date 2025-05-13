@@ -1,17 +1,101 @@
-/* -------------------- contacto - inicio ------------------------ */
-#main-contacto{
-    padding-top: 3.25rem;
-    height: 120vh;
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: 1px solid orange;
-        border-radius: 40px 40px 40px 40px;
-        background-color: rgb(54, 54, 54);
-        color: $color1;
-        font-size: 20px;
-        font-style: oblique;
-        height: 56.25rem;
-        }
-    }
+// ---------------- Contact Section (_contacto.scss) ----------------
+#main-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  width: 100%;
+}
+
+#main-contacto .contact-container {
+  background: #202020;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  color: $color1;
+}
+
+#main-contacto .contact-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+#main-contacto .contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#main-contacto .contact-container input,
+#main-contacto .contact-container textarea {
+  background: #2e2e2e;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: $color1;
+  font-size: 1rem;
+}
+
+#main-contacto .contact-container input:focus,
+#main-contacto .contact-container textarea:focus {
+  outline: 2px solid rgba(100, 150, 250, 0.8);
+}
+
+#main-contacto .contact-container button {
+  background: orangered;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#main-contacto .container-contact button:hover {
+  background: darken(orangered, 10%);
+}
+
+// ---------- Override alineación de radios en Contacto ----------
+#main-contacto .d-flex > .form-check {
+  display: flex !important;        // convierte cada form-check en un flex
+  align-items: center !important;  // centra verticalmente el radio y su label
+  margin-right: 1.5rem !important; // espacio entre cada bloque
+}
+
+#main-contacto .d-flex > .form-check .form-check-input {
+  margin: 0 0.5rem 0 0 !important; // separa el radio de su texto
+}
+
+#main-contacto .d-flex > .form-check:last-child {
+  margin-right: 0 !important;      // quita margen al último
+}
+
+
+
+
+
+// ---------------- Responsive ----------------
+@media (max-width: 768px) {
+  #main-contacto {
+    padding: 2rem 1rem;
+  }
+  #main-contacto .container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 414px) {
+  #main-contacto {
+    padding: 1.5rem 0.5rem;
+  }
+  #main-contacto .container {
+    padding: 1rem;
+  }
+}
+
+

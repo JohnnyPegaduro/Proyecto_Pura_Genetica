@@ -1,109 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+
+  <!-- Bootstrap CSS primero -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+    crossorigin="anonymous"
+  />
+  <!-- Tus estilos después -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <header>
+    <div id="logo">
+      <img src="css/imagenes/logo.png" alt="Logo Pura Genética" />
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <main id="main-contacto">
+    <div class="contact-container mx-auto">
+      <h1 class="section-title">Contacto</h1>
 
-    <header>
-        <div id="logo"><img src="" alt=""></div>
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#"></a>
-            
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+      <h2 class="text-center mb-3">Newsletter</h2>
+      <p class="text-center mb-4">Queremos saber más sobre vos</p>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main id="main-contacto">
-        <div class="container">
-            <h2>Newsletter</h2>
-            <p>Queremos saber mas sobre vos</p>
-            <form action="/action_page.php" class="needs-validation" novalidate>
-
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio">Hombre
-                    </label>
-                </div>
-
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optradio">Mujer
-                    </label>
-                </div>
-                
-                <div class="form-check-inline disabled">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input"    name="optradio">Sin especificar
-                    </label>
-                </div>
-                
-                <div class="form-group">
-                    <label for="uname">Nombre:</label>
-                    <input type="text" class="form-control" id="uname" placeholder="Introduce tu Nombre" name="uname" required>
-                    <div class="valid-feedback"></div>
-                        <div class="invalid-feedback">Nombre requerido </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="uname">Apellido:</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Introduce tu Apellido" name="uname" required>
-                        <div class="valid-feedback"></div>
-                        <div class="invalid-feedback">Apellido requerido</div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" placeholder="Introduce tu Email" id="email" name="email" required>
-                        <div class="invalid-feedback">Email requerido </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="comment">Comentarios:</label>
-                        <textarea class="form-control" rows="6" id="comment" placeholder="Escribinos tu comentario!"></textarea>
-                    </div>
-                
-
-                    <div class="form-group form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="remember" required> Quiero recibir nuevas ofertas en mi correo
-                        </label>
-                    </div>
-                
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+      <form action="/action_page.php" class="needs-validation" novalidate>
+        <!-- Radios uno debajo del otro -->
+        <div class="mb-4">
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="optradio"
+              id="radioHombre"
+              required
+            />
+            <label class="form-check-label text-white" for="radioHombre">Hombre</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="optradio"
+              id="radioMujer"
+            />
+            <label class="form-check-label text-white" for="radioMujer">Mujer</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="optradio"
+              id="radioSin"
+            />
+            <label class="form-check-label text-white" for="radioSin">Sin especificar</label>
+          </div>
         </div>
-    </main>
+
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            placeholder="Introduce tu Nombre"
+            name="nombre"
+            required
+          />
+          <div class="invalid-feedback">Nombre requerido</div>
+        </div>
+
+        <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="apellido"
+            placeholder="Introduce tu Apellido"
+            name="apellido"
+            required
+          />
+          <div class="invalid-feedback">Apellido requerido</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Introduce tu Email"
+            name="email"
+            required
+          />
+          <div class="invalid-feedback">Email requerido</div>
+        </div>
+
+        <div class="form-group">
+          <label for="comentarios">Comentarios:</label>
+          <textarea
+            class="form-control"
+            id="comentarios"
+            rows="4"
+            placeholder="Escribinos tu comentario!"
+          ></textarea>
+        </div>
+
+        <div class="form-group form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="ofertas"
+            name="ofertas"
+            required
+          />
+          <label class="form-check-label text-white" for="ofertas">
+            Quiero recibir nuevas ofertas en mi correo
+          </label>
+          <div class="invalid-feedback">Debe aceptar para continuar</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </main>
 
 
 
