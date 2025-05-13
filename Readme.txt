@@ -1,22 +1,17 @@
-Pura Genética - Tienda de Suplementos (Proyecto HTML+SCSS)
+# Pura Genética - Tienda de Suplementos (Proyecto HTML+SCSS)
 
-Pura Genética es un sitio web estático de e-commerce enfocado en la venta de suplementos deportivos (whey protein, creatina, pre-workouts y más). Fue desarrollado usando únicamente HTML5, SCSS y Bootstrap 4, y representa uno de mis primeros proyectos de desarrollo front-end.
+**Pura Genética** es un sitio web estático de e-commerce enfocado en la venta de suplementos deportivos (whey protein, creatina, pre-workouts y más). Fue desarrollado usando únicamente **HTML5**, **SCSS** y **Bootstrap 4**, y representa uno de mis _primeros proyectos_ de desarrollo front-end.
 
-Características
+## Características
 
-Maquetación responsive con Grid y Flexbox.
+- Maquetación responsive con **Grid** y **Flexbox**.  
+- Estilos escritos en **SCSS** con organización modular (partials para contacto, galería, preguntas frecuentes).  
+- Carrusel de imágenes implementado con **Bootstrap 4 Carousel**.  
+- Sección de productos con imágenes de fondo, efectos hover y layout fluido.  
+- Formulario de contacto con validación nativa de HTML5 y estilos personalizados.  
+- Navegación adaptativa con menú hamburguesa en dispositivos móviles.
 
-Estilos escritos en SCSS con organización modular (partials para contacto, galería, preguntas frecuentes).
-
-Carrusel de imágenes implementado con Bootstrap 4 Carousel.
-
-Sección de productos con imágenes de fondo, efectos hover y layout fluido.
-
-Formulario de contacto con validación nativa de HTML5 y estilos personalizados.
-
-Navegación adaptativa con menú hamburguesa en dispositivos móviles.
-
-Estructura del proyecto
+## Estructura del proyecto
 
 Proyecto_Pura_Genetica/
 ├── css/
