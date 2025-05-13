@@ -1,22 +1,58 @@
-# Proyecto_Pura_Genetica
+Pura Genética - Tienda de Suplementos (Proyecto HTML+SCSS)
 
-agregue estas keywords: Suplementos, suplementos para aumentar la masa muscular, suplementos para subir de peso, suplementos star nutrition, suplementos universal nutrition, whey protein, creatina, proteina
+Pura Genética es un sitio web estático de e-commerce enfocado en la venta de suplementos deportivos (whey protein, creatina, pre-workouts y más). Fue desarrollado usando únicamente HTML5, SCSS y Bootstrap 4, y representa uno de mis primeros proyectos de desarrollo front-end.
 
-cambie estos titulos:
-index.html:  
-Tienda online de Pura Genetica
+Características
 
-productos.html:
-Productos
+Maquetación responsive con Grid y Flexbox.
 
-contacto.html:
-Contacto
+Estilos escritos en SCSS con organización modular (partials para contacto, galería, preguntas frecuentes).
 
-preguntasfrecuentes.html:
-Preguntas
+Carrusel de imágenes implementado con Bootstrap 4 Carousel.
 
-galeria.html:
-Galeria
+Sección de productos con imágenes de fondo, efectos hover y layout fluido.
 
-agregue esta descripcion:
-Comprá productos de Pura Genetica por internet. Tenemos Optimum nutrition y más. Hacé tu pedido y pagalo online.
+Formulario de contacto con validación nativa de HTML5 y estilos personalizados.
+
+Navegación adaptativa con menú hamburguesa en dispositivos móviles.
+
+Estructura del proyecto
+
+Proyecto_Pura_Genetica/
+├── css/
+│   ├── images/           # Imágenes del sitio
+│   ├── _contacto.scss    # Estilos sección Contacto
+│   ├── _galeria.scss     # Estilos sección Galería
+│   ├── _preguntas.scss   # Estilos FAQ
+│   ├── styles.scss       # SCSS principal
+│   ├── styles.css        # CSS compilado
+│   └── styles.css.map    # Mapa de origen
+├── index.html            # Página principal
+├── productos.html        # Listado de productos
+├── galeria.html          # Galería de videos e imágenes
+├── preguntasfrecuentes.html # FAQ
+├── contacto.html         # Formulario de contacto
+└── README.md             # Documentación del proyecto
+
+## Cómo usar
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/JohnnyPegaduro/Proyecto_Pura_Genetica.git
+
+Compilar SCSS a CSS:
+
+sass css/styles.scss css/styles.css --no-source-map --style=compressed
+
+Abrir index.html en un navegador.
+
+Notas
+
+Este proyecto me ayudó a familiarizarme con Sass, Bootstrap y responsive design.
+
+Aprende a organizar estilos en partials y a usar tareas build simples sin Node.js.
+
+© 2025 Matías Ariel Deluca
+
+
+
